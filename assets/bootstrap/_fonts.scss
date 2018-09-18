@@ -1,0 +1,8 @@
+@charset 'UTF-8';
+
+$pathToFonts: './../fonts';
+
+@font-face {
+    font-family: 'MuseoSansCyrl';
+    src: url('#{$pathToFonts}/museo-sans-cyrl/MuseoSansCyrl_0.otf');
+}

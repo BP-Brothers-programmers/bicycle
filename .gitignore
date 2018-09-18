@@ -1,0 +1,5 @@
+DESIGN/*
+.gulp-scss-cache/*
+node_modules/*
+assets/modules/donut-chart/*
+assets/modules/trade-info/*

@@ -1,0 +1,50 @@
+@charset 'UTF-8';
+
+$pathToIconFont: '../iconfont/';
+
+@font-face {
+    font-family: 'iconic';
+    src: url('#{$pathToIconFont}iconfont.eot');
+    src: url('#{$pathToIconFont}iconfont.eot?iefix') format('eot'),
+        url('#{$pathToIconFont}iconfont.woff') format('woff'),
+        url('#{$pathToIconFont}iconfont.ttf') format('ttf'),
+        url('#{$pathToIconFont}iconfont.svg#iconic') format('svg');
+}
+
+@function iconic-char($filename) {
+    $char: '';
+
+    // Example:
+    // @if ($filename == calendar) {
+    //     $char: "\EA01";
+    // } @else if ($filename == correct-mark) {
+    //     $char: "\EA02";
+    // }
+
+    @return $char;
+}
+
+@mixin iconic($filename, $insert: after, $extend: true) {
+    &::#{$insert} {
+        content: iconic-char($filename);
+    }
+}
+
+.iconic {
+    font-family: 'iconic';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    text-decoration: none;
+    text-transform: none;
+    color: inherit;
+    line-height: normal;
+    vertical-align: middle;
+
+    // Example:
+    // &--calendar {
+    //     @include iconic(calendar);
+    // }
+}
