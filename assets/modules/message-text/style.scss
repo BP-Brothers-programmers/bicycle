@@ -1,0 +1,26 @@
+.message-text {
+    display: grid;
+    padding: 6vw 2%;
+    grid-row-gap: 10px;
+    background-color:  #f7f7f7;
+
+    * {
+        display: grid;
+        justify-self: center;
+    }
+
+    &__title {
+        font-weight: bold;
+        margin: 10px 0;
+        text-transform: uppercase;
+        font-family: Lato;
+    }
+
+    &__information {
+        width: 85%;
+        font-weight: 100;
+        text-align: center;
+        color: grey;
+        font-family: Lato; 
+    }
+}
