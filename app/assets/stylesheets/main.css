@@ -235,6 +235,26 @@ body {
     font-weight: bold;
     color: white; }
 
+.message-text {
+  display: grid;
+  padding: 6vw 2%;
+  grid-row-gap: 10px;
+  background-color: #f7f7f7; }
+  .message-text * {
+    display: grid;
+    justify-self: center; }
+  .message-text__title {
+    font-weight: bold;
+    margin: 10px 0;
+    text-transform: uppercase;
+    font-family: Lato; }
+  .message-text__information {
+    width: 85%;
+    font-weight: 100;
+    text-align: center;
+    color: grey;
+    font-family: Lato; }
+
 .tns-outer {
   padding: 0 !important; }
 

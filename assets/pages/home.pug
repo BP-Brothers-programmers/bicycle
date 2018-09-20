@@ -5,19 +5,20 @@ block variables
     - bodyClass = 'body__home'
 
 block content
-    .container
-        -
-            var image = {
-                type: '',
-                img: 'front-bicycle.png',
-                logo: 'logo-bicycle.png',
-                text: 'Some Text'
-            };
-        include ./../modules/image-with-logo/module
+    .bicycle
+        .container
+            -   
+                var image = {
+                    img: 'helm.png'
+                };
+            include ./../modules/image-with-logo/module
 
-    .container
-        -   
-            var image = {
-                img: 'helm.png'
-            };
-        include ./../modules/image-with-logo/module
+            -   
+                var message = {
+                    type: '',
+                    img: 'icon(cep).png',
+                    text: 'Lorem ipsum dolor sit amet.',
+                    content: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure deserunt modi nemo aspernatur commodi iusto doloribus natus eius ad officia illo, sunt culpa exercitationem distinctio aperiam, autem fuga excepturi odio voluptatem porro deleniti reiciendis ullam cupiditate dicta. Nisi, esse. Doloribus ut non autem molestiae dolore dicta explicabo ipsa, tempore obcaecati!'
+                };
+            include ./../modules/message-text/module
+
