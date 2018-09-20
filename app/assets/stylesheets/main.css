@@ -224,8 +224,7 @@ body {
 
 .image-with-logo {
   display: grid;
-  position: relative;
-  width: 550px; }
+  position: relative; }
   .image-with-logo__logo {
     position: absolute;
     align-self: center;
