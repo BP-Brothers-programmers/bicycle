@@ -5,11 +5,19 @@ block variables
     - bodyClass = 'body__home'
 
 block content
-    -
-        var image = {
-            type: '',
-            img: 'front-bicycle.png',
-            logo: 'logo-bicycle.png',
-            text: 'Some Text'
-        };
-    include ./../modules/image-with-logo/module
+    .container
+        -
+            var image = {
+                type: '',
+                img: 'front-bicycle.png',
+                logo: 'logo-bicycle.png',
+                text: 'Some Text'
+            };
+        include ./../modules/image-with-logo/module
+
+    .container
+        -   
+            var image = {
+                img: 'helm.png'
+            };
+        include ./../modules/image-with-logo/module
