@@ -222,6 +222,20 @@ body {
   line-height: normal;
   vertical-align: middle; }
 
+.image-with-logo {
+  display: grid;
+  position: relative;
+  width: 550px; }
+  .image-with-logo__logo {
+    position: absolute;
+    align-self: center;
+    justify-self: center; }
+  .image-with-logo__description {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white; }
+
 .tns-outer {
   padding: 0 !important; }
 
