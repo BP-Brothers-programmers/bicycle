@@ -163,17 +163,17 @@ gulp.task('browser-sync', function() {
 gulp.task('watch', ['browser-sync'], function(){
     gulp.watch([path.watch.html], function(event, cb) {
         //console.log(event.path);
-        //gulp.start('html:build');
-        var config = require(__dirname + '/assets/content.json');
-        return gulp.src(event.path)
-            .pipe(gulpPug({
-                pug: pug,
-                pretty: true,
-                locals: config
-            }))
-            .on('error', log)
-            .pipe(flatten())
-            .pipe(gulp.dest(path.build.html))
+        gulp.start('html:build');
+        // var config = require(__dirname + '/assets/content.json');
+        // return gulp.src(event.path)
+        //     .pipe(gulpPug({
+        //         pug: pug,
+        //         pretty: true,
+        //         locals: config
+        //     }))
+        //     .on('error', log)
+        //     .pipe(flatten())
+        //     .pipe(gulp.dest(path.build.html))
     });
     gulp.watch(['assets/modules/quotes-info/*.pug'], function(event, cb) {
         gulp.start('quotesBlock:build');

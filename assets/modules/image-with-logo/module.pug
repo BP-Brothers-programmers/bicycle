@@ -1,0 +1,7 @@
+.image-with-logo(class= image.type ? 'image-with-logo--' + image.type : '')
+    img.image-with-logo__image(src="./../assets/images/" + image.img, alt="Error", width="100%")
+    if (image.logo)
+        .image-with-logo__logo
+            img(src="./../assets/images/" + image.logo, alt="Error")
+            if (image.text)
+                p.image-with-logo__description= image.text

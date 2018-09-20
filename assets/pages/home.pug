@@ -5,4 +5,11 @@ block variables
     - bodyClass = 'body__home'
 
 block content
-    div.title Hello world
+    -
+        var image = {
+            type: '',
+            img: 'front-bicycle.png',
+            logo: 'logo-bicycle.png',
+            text: 'Some Text'
+        };
+    include ./../modules/image-with-logo/module
