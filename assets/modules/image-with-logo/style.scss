@@ -14,4 +14,12 @@
         font-weight: bold;
         color: white;
     }
+
+    &--front {
+        height: 100%;
+        
+        img {
+            height: 100%;
+        }
+    }
 }

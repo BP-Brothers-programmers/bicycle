@@ -22,3 +22,55 @@ block content
                 };
             include ./../modules/message-text/module
 
+            .bicycle__rools
+                .bicycle__front-bicycle
+                    -
+                        var image = {
+                            type: 'front',
+                            img: 'front-bicycle.png',
+                            logo: 'logo.png',
+                        };
+                    include ./../modules/image-with-logo/module
+                .bicycle__rama
+                    -   
+                        var message = {
+                            type: 'rama',
+                            img: 'icon(rama).png',
+                            text: 'Lorem ipsum dolor',
+                            content: 'Lorem ipsum dolor sit,  aspernatur commodi!'
+                        };
+                    include ./../modules/message-text/module
+                .bicycle__saddle
+                    -   
+                        var image = {
+                            type: 'saddle',
+                            img: 'saddle.png'
+                        };
+                    include ./../modules/image-with-logo/module
+
+            .bicycle__river
+                .bicycle__rama
+                    -   
+                        var message = {
+                            type: 'koleso',
+                            img: 'icon(koleso).png',
+                            text: 'Lorem ipsum dolor',
+                            content: 'Lorem ipsum dolor sit,  aspernatur commodi!'
+                        };
+                    include ./../modules/message-text/module
+                .bicycle__saddle
+                    -   
+                        var image = {
+                            type: 'saddle',
+                            img: 'black-saddle.png'
+                        };
+                    include ./../modules/image-with-logo/module
+                .bicycle__front-bicycle
+                    -
+                        var image = {
+                            type: 'front',
+                            img: 'bicycle.png',
+                            logo: 'logo-ventage.png',
+                        };
+                    include ./../modules/image-with-logo/module
+
