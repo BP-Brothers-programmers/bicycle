@@ -181,6 +181,9 @@ gulp.task('watch', ['browser-sync'], function(){
     gulp.watch(['assets/modules/**/*.scss', 'assets/default.scss', 'assets/buttons.scss', 'assets/landing-default.scss'], function(event, cb) {
         gulp.start('style:build');
     });
+    gulp.watch(['assets/style.scss'], function(event, cb) {
+        gulp.start('style:build');
+    });
     gulp.watch(['assets/parts/**/*.pug'], function(event, cb) {
         gulp.start('html:build');
     });

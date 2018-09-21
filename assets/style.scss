@@ -1,0 +1,46 @@
+.bicycle {
+    &__rools {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas: 
+            "frontBicycle rama"
+            "frontBicycle rama"
+            "frontBicycle saddle"
+
+    }
+
+    &__front-bicycle {
+        grid-area: frontBicycle;
+    }
+
+    &__rama {
+        grid-area: rama;
+    }
+
+    &__saddle {
+        grid-area: saddle;
+    }
+
+    &__river {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas: 
+            "rama frontBicycle"
+            "rama frontBicycle"
+            "saddle frontBicycle"
+
+    }
+
+    &__front-bicycle {
+        grid-area: frontBicycle;
+    }
+
+    &__rama {
+        grid-area: rama;
+    }
+
+    &__saddle {
+        grid-area: saddle;
+    }
+}
+

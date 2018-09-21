@@ -234,6 +234,10 @@ body {
     font-size: 1.5em;
     font-weight: bold;
     color: white; }
+  .image-with-logo--front {
+    height: 100%; }
+    .image-with-logo--front img {
+      height: 100%; }
 
 .message-text {
   display: grid;
@@ -244,16 +248,50 @@ body {
     display: grid;
     justify-self: center; }
   .message-text__title {
-    font-weight: bold;
     margin: 10px 0;
+    text-align: center;
+    font-weight: bold;
     text-transform: uppercase;
     font-family: Lato; }
   .message-text__information {
     width: 85%;
-    font-weight: 100;
+    line-height: 30px;
     text-align: center;
-    color: grey;
-    font-family: Lato; }
+    font-weight: 100;
+    font-family: Lato;
+    color: #5a5757; }
+  .message-text--rama {
+    align-content: center;
+    padding: 3vw 2%;
+    background-color: white; }
+
+.bicycle__rools {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas: "frontBicycle rama" "frontBicycle rama" "frontBicycle saddle"; }
+
+.bicycle__front-bicycle {
+  grid-area: frontBicycle; }
+
+.bicycle__rama {
+  grid-area: rama; }
+
+.bicycle__saddle {
+  grid-area: saddle; }
+
+.bicycle__river {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas: "rama frontBicycle" "rama frontBicycle" "saddle frontBicycle"; }
+
+.bicycle__front-bicycle {
+  grid-area: frontBicycle; }
+
+.bicycle__rama {
+  grid-area: rama; }
+
+.bicycle__saddle {
+  grid-area: saddle; }
 
 .tns-outer {
   padding: 0 !important; }
