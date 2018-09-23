@@ -255,6 +255,8 @@ body {
     font-family: Lato; }
   .message-text__information {
     width: 85%;
+    max-height: 185px;
+    overflow: hidden;
     line-height: 30px;
     text-align: center;
     font-weight: 100;
@@ -262,8 +264,21 @@ body {
     color: #5a5757; }
   .message-text--rama {
     align-content: center;
+    position: relative;
     padding: 3vw 2%;
+    box-sizing: border-box;
     background-color: white; }
+    .message-text--rama::after {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 20%;
+      background-size: 100% auto;
+      background-image: linear-gradient(to top, white, rgba(255, 255, 255, 0.3));
+      pointer-events: none; }
 
 .bicycle__rools {
   display: grid;

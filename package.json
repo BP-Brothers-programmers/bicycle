@@ -6,7 +6,8 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "build": "webpack --env production --mode production && gulp build",
-        "start": "webpack --env development --mode development && gulp build"
+        "start": "webpack --env development --mode development && gulp build",
+        "js:build": "webpack --env development --mode development"
     },
     "repository": {
         "type": "git",
